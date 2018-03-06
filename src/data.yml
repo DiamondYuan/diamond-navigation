@@ -1,0 +1,79 @@
+title: "呆萌的猿"
+beian: " 浙ICP备17058293号-1	"
+gaBeian: "浙公网安备 33010602008898号"
+gaBeianHref: "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602008898"
+boxes:
+- category: 开发社区
+  category_id: developerCommunity
+  category_icon: '#developerCommunity'
+  items:
+  - title: SegmentFault
+    logo: '#segmentfault-icon'
+    href: https://segmentfault.com/
+    desc: SegmentFault ( www.sf.gg ) 是中国领先的开发者社区。
+          我们希望为中文开发者提供一个纯粹、高质的技术交流平台，
+          与开发者一起学习、交流与成长，创造属于开发者的时代！
+  - logo: '#github'
+    href: https://github.com
+    title: Github
+    desc: 面向开源及私有软件项目的git托管平台
+  - logo: '#gitlab'
+    href: https://gitlab.com/
+    title: Gitlab
+    desc: GitLab是一个利用Ruby on Rails开发的开源应用程序，实现一个自托管的Git项目仓库。
+- category: 博客
+  category_id: blog
+  category_icon: '#Blog'
+  items:
+  - logo: '#jamespan-icon'
+    href: https://blog.jamespan.me/
+    title: James Pan's Blog
+    desc: 云数据库平台技术专家，客居杭州。喜欢学习研究新技术，然后中途弃坑。擅长构建无状态的分布式服务，更擅长让分布式系统进入无服务状态。不会用
+      Git 只会用 SourceTree，没有 JetBrains 全家桶就写不出代码，没有 Google 和 StackOverflow 就解决不了技术问题。
+- category: 参考文档
+  category_id: document
+  category_icon: '#document'
+  items:
+  - logo: '#vuejs'
+    href: https://cn.vuejs.org/index.html
+    title: Vue.js
+    desc: 渐进式JavaScript 框架
+  - logo: '#yfd-wiki-icon'
+    href: https://wiki.yfd.im/
+    title: DiamondYuan's Wiki
+    desc: 我的个人知识库,基于tiddlywiki。用于管理一些零碎的小知识。
+- category: 工具
+  category_id: tools
+  category_icon: '#tools'
+  items:
+  - logo: '#processon-icon'
+    href: https://www.processon.com/
+    title: ProcessOn
+    desc: 免费在线作图，实时协作
+  - logo: '#json'
+    href: https://www.json.cn/
+    title: JSON在线解析
+    desc: JSON在线解析及格式化验证 - JSON.cn
+  - logo: '#jsontoyaml'
+    href: https://www.json2yaml.com/
+    title: JSON转YAML
+    desc: JSON在线转YAML
+  - logo: '#jinaconvert-icon'
+    href: http://www.jinaconvert.com/cn/
+    title: 在线图片转化
+    desc: 将您的图片转换成多种图片格式。
+          JPG, PNG, GIF, BMP, TIFF, ICO, SVG和更多图片格式!
+  - logo: '#can-i-use-icon'
+    href: https://caniuse.com/
+    title: Can I Use
+    desc: Web前端兼容性列表
+  - href: http://asciiflow.com/
+    logo: '#asciiflow-icon'
+    title: ASCIIFlow
+    desc: 绘制纯文本的ASCIIFlow图,Geek 风格的反璞归真。
+  - href: https://regexper.com/
+    logo: '#regexper-icon'
+    title: Regexper
+    desc: 解析正则表达式并且绘制流程图。
+
+
