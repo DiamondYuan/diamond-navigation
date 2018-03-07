@@ -1,41 +1,34 @@
 <template>
   <div id="app">
-    <left-bar :title="title" :boxes="boxes">leftbar</left-bar>
-    <section class="main">
-      <div class="main-content">
-        <div v-for="box in boxes">
-          <box :boxData="box"> 具体菜单</box>
-        </div>
-      </div>
-      <nav-footer :beian="beian" :gaBeian="gaBeian" :gaBeianHref="gaBeianHref">导航</nav-footer>
-    </section>
+    <pc-index v-if="usePc()" :data="mainData">pc</pc-index>
+    <mobile-index :data="mainData" v-if="!usePc()">mobile</mobile-index>
   </div>
 </template>
 
 <script>
-  import Box from "@/components/Box"
-  import Footer from "@/components/Footer"
-  import LeftBar from "@/components/LeftBar"
-
-  const data = require("json-loader!yaml-loader!./data.yml");
-
+  import PcIndex from "./pages/PC";
+  import MobileIndex from "./pages/Mobile";
+  const mainData = require("json-loader!yaml-loader!./data.yml");
   export default {
     name: "page",
     mounted: function () {
-      document.title = this.title;
+      document.title = this.mainData.title;
     },
     components: {
-      Box,
-      LeftBar,
-      "nav-footer": Footer
+      MobileIndex,
+      PcIndex,
     },
     data() {
       return {
-        title: data.title,
-        boxes: data.boxes,
-        beian: data.beian,
-        gaBeianHref: data.gaBeianHref,
-        gaBeian: data.gaBeian
+        mainData: mainData,
+      }
+    },
+    methods: {
+      usePc() {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          return false;
+        }
+        return screen.width > 480;
       }
     }
 
@@ -45,22 +38,5 @@
 <style>
   html body {
     margin: 0;
-  }
-
-  .main {
-    display: -webkit-box;
-    display: flex;
-    position: relative;
-    -webkit-box-orient: vertical;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
-    margin-left: 248px;
-  }
-
-  .main-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: #F3F6F8;
   }
 </style>
