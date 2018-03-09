@@ -85,7 +85,7 @@ server {
 
 server {
     listen 443 ssl;
-    server_name diamondyuan.com;
+    server_name domain.com;
     ssl_certificate /etc/ssl/startssl/domain.com_bundle.crt;
     ssl_certificate_key /etc/ssl/startssl/domain.com.key;
 
