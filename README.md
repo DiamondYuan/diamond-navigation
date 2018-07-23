@@ -1,6 +1,6 @@
 # diamond-navigation
 
-[demo](https://www.diamondyuan.com)
+[demo](https://diamondyuan.com)
 
 
 
